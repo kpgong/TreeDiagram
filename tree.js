@@ -26,4 +26,4 @@ const tree = [
 // root 是一个数组
 // root[0] 应为根结点的引用
 // 程序只使用 root[0] 中的值
-root = [tree[0]]
+const root = [tree[0]]
