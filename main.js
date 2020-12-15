@@ -23,10 +23,11 @@ function drawLabel(root) {
 	let cnt = 1;
 	root.children.forEach(x => {
 		const e = tree[x];
+		const str = e.val.toString();
 		PAINTER.fillText(
-			e.val.toString(),
+			str,
 			{
-				x: e.x - RADIUS * e.val.length / 2 - RADIUS * 2,
+				x: e.x - RADIUS * str.length / 2 - RADIUS * 2,
 				y: e.y + WAVE_HEIGHT[cnt % 2]
 			}
 		)
@@ -88,10 +89,11 @@ PAINTER.setFont(LABEL_FONT);
 
 if (LABEL_ENABLED) {
 	drawLabel(root[0]);
+	const str = root[0].val.toString();
 	PAINTER.fillText(
-		root[0].val.toString(),
+		str,
 		{
-			x: root[0].x - root[0].val.length - RADIUS * 2,
+			x: root[0].x - str.length - RADIUS * 2,
 			y: root[0].y + RADIUS * 3
 		}
 	);
