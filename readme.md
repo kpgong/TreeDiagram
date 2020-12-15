@@ -44,7 +44,7 @@ root = [tree[0]]
 
 ## 第二步
 
-用浏览器打开 `index.html`。要求浏览器支持 HTML5 的 canvas 特性。树形图会显示在页面上。然后你可以展示、截图。也可以使用 canvas2svg （别人写的程序，我这里没有）把它转换为 svg 图像文件来保存。
+用浏览器打开文件 `index.html`。要求浏览器支持 HTML5 的 canvas 特性。树形图会显示在页面上。然后你可以展示、截图。也可以使用 canvas2svg （别人写的程序，我这里没有）把它转换为 svg 图像文件来保存。
 
 # 常见问题
 
@@ -52,15 +52,15 @@ root = [tree[0]]
 
 你可能需要上下左右滚动页面或者缩小页面才能看到完整图像。
 
-在 `index.html` 里面修改元素 `myCanvas` 的长度和宽度，它决定了绘图区的大小。`myCanvas` 过大时，浏览器会停止工作。
+在文件 `index.html` 里面修改元素 `myCanvas` 的长度和宽度，它决定了绘图区的大小。`myCanvas` 过大时，浏览器会停止工作。
 
-在 `config.js` 里面修改 `ORIGIN` 的值，它决定了程序绘制的根结点的坐标。
+在文件 `config.js` 里面修改 `ORIGIN` 的值，它决定了程序绘制的根结点的坐标。
 
 你可以打开浏览器的控制台，查看 `root[0].x` 及 `root[0].y` 来确定根结点的当前坐标。
 
 ## 我想改大小、颜色、字体、字号、间距、图像位置/我想关闭文本显示
 
-都在 `config.js` 里面。
+都在文件 `config.js` 里面。
 
 ## 我可以在表示结点的对象中加入其他属性/方法吗？
 
@@ -79,8 +79,8 @@ offset
 {
 	val:		/* something */,
 	children:	/* something */,
-	x:			/* something */,
-	y:			/* something */,
+	x:		/* something */,
+	y:		/* something */,
 	seg:		/* something */,
 	offset:		/* something */
 }
@@ -92,7 +92,7 @@ offset
 
 ## 你可以完善这个程序吗？
 
-不一定有时间。
+不。
 
 这个程序简短易懂，你可以提交代码来扩充它、或者将它移植到其他语言，如果你这么做了，请告诉我。
 
